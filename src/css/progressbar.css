@@ -1,0 +1,160 @@
+.audio-wrapper {
+	position: absolute;
+    left: 60px;
+    margin: 10px auto;
+    width: 2000px;
+    height: 70px;
+    border-radius:0 0 5px 5px;
+    background-color: white
+}
+
+.audio-left {
+    float: left;
+    text-align: center;
+    width: 15%;
+    height: 100%;
+}
+
+.audio-left img {
+    width: 70px;
+    height: 70px;
+    padding: 15px 15px ;
+    position: relative;
+    margin: 0 12px;
+    display: initial;   /* 解除与app的样式冲突 */
+    left: 20px;
+    
+}
+.musicBtn{
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.musicBtn:active{
+    top:0.5px
+  }
+
+.audio-middle {
+	position: relative;
+    margin-right: 2%;
+    float: left;
+    width: 45%;
+    height: 100%;
+    top: 10px;
+    left: 50px;
+}
+
+.audio-middle p {
+    font-size: 15px;
+    height: 35%;
+    margin: 2px 0;
+    /* 歌曲名称只显示在一行，超出部分显示为省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display:inline-block;    /*p宽度自适应内容 */
+}
+.audio-middle #author{
+	position: absolute;
+	top:0;	
+}
+
+.progress-bar-bg {
+    background-color: #d9d9d9;
+    position: relative;
+    height: 2px;
+    cursor: pointer;
+	border-radius:21px;
+}
+
+.progress-dotbar {
+    background-color: black;
+    width: 0px;
+    height: 5px;
+	border-radius:2px;
+}
+
+.progress-bar-bg span {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:black;
+    position: absolute;
+    left: 0;
+    top: 2.5px;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.audio-right{
+    position: relative;
+    margin-right: 2%;
+    float: left;
+    width: 25%;
+    height: 100%;
+    top: 35px;
+    left: 30px;
+}
+
+
+.audio-right img{
+    width: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.volume-bar-bg {
+    background-color: #d9d9d9;
+    position: relative;
+    width: 100px;
+    height: 5px;
+    cursor: pointer;
+    border-radius:21px;
+    /* 不让div换行 */
+    display: inline-block;
+}
+
+.volume-bar {
+    background-color: black;
+    width: 0px;
+    height: 5px;
+	border-radius:2px;
+}
+
+.volume-bar-bg span {
+    content: " ";
+    border-radius: 50%;
+    background-color:black;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+
+.audio-time {
+    position: relative;
+    top: 5px;
+    overflow: hidden;
+    margin-top: -1px;
+    font-size: 20px;
+}
+.audio-length-current {
+    float: right;
+    
+}
+.audio-length-total {
+    float: right;
+    
+}
+
+
+
+.disable{
+	pointer-events: none;
+}
